@@ -444,7 +444,9 @@ header nav ul li a,
 		order: 1;
 		margin-top: 70px;
 	}
-	header nav ul li a,
+	header nav ul li a {
+	   font-size: 8px;
+	}
 	.header__auth a span,
 	.main__social_media
 	.follow,
@@ -517,10 +519,9 @@ header nav ul li a,
 	}
 	header nav {
 		position: absolute;
-	    right: 80px;
-	    top: 100px;
+	    right: 30px;
+    	top: 25px;
 	    width: 25%;
-	    padding: 10px 20px;
 	    opacity: 0;
 	    transition: opacity 0.5s ease;
 	}
