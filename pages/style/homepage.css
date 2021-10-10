@@ -98,6 +98,7 @@ header nav ul li a {
 	transform: translate(-2%, -50%);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	z-index: 1;
 }
 .main__social_media .follow {
@@ -107,6 +108,10 @@ header nav ul li a {
 	font-weight: 700;
 	line-height: 22px;
 	color: #FFFFFF;
+}
+.main__vertical_navigation nav ul li .active {
+	opacity: 1;
+	transition: all 0.3s ease;
 }
 .main__vertical_navigation {
 	top: 50%;
@@ -144,9 +149,9 @@ header nav ul li a {
 }
 .main__title_info {
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 50%;
-	transform: translate(-50%, -35%);
+	transform: translate(-50%, -40%);
 }
 .main__under_title {
 	font-size: 18px;
@@ -212,7 +217,7 @@ section {
 }
 .right_side {
 	order: 2;
-	margin-left: 50px;
+	margin: 0 25px 0 50px;
 }
 .section__number_of_section {
 	color: rgba(255, 255, 255, 0.1);
@@ -239,6 +244,7 @@ section {
 	color: #FFFFFF;
 	line-height: 32px;
 	margin-bottom: 27px;
+	text-align: justify;
 }
 .info_block a {
 	display: flex;
@@ -289,4 +295,313 @@ footer {
 	font-weight: 700;
 	line-height: 32px;
 	color: #FBD784;
+}
+header nav ul li a:hover,
+.header__auth a:hover svg path,
+.header__auth a:hover,
+.main__scroll_down:hover svg path,
+.main__scroll_down:hover,
+.footer__navigatino nav ul li a:hover,
+.main__social_media a svg:hover path {
+	transition: all 0.5s ease;
+	opacity: 0.9;
+	color: #FBD784;
+	fill: #FBD784;
+}
+header nav ul li a,
+.header__auth a svg path,
+.header__auth a,
+.main__scroll_down svg path,
+.main__scroll_down,
+.footer__navigatino nav ul li a,
+.main__social_media a svg path {
+	transition: all 0.5s ease;
+}
+.section__read_more:hover span,
+.section__read_more:hover svg path {
+	transition: all 0.5s ease;
+	opacity: 0.9;
+}
+._anim-items {
+	transition: all 1.5s ease;
+	opacity: 0;
+}
+._anim_no_use {
+	opacity: 1;
+}
+._active {
+	transition: all 2s ease;
+	opacity: 1;
+}
+.burger {
+	display: none;
+}
+@media screen and (max-width: 1024px) {
+	header nav ul li a,
+	.header__auth a span,
+	.main__social_media .follow,
+	.main__vertical_navigation nav ul li a,
+	.main__under_title,
+	.main__scroll_down span,
+	.footer__navigation_title {
+	    font-size: 14px;
+	}
+	.main__vertical_navigation nav ul li a {
+    	line-height: 32px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	.main__title_info {
+	    top: 45%;
+	    transform: translate(-50%, -45%);
+	}
+	.main__wrap_title_info {
+		height: 500px;
+	}
+	.main__under_title {
+		padding-left: 40px;
+	}
+	.main__under_title::before {
+    	width: 30px;
+	}
+	.main__scroll_down svg {
+		width: 12px;
+	}
+	#first_section::before {
+	    transform: translate(0px, -60%);
+	}
+	.info_block h2 {
+	    font-size: 26px;
+	    line-height: 38px;
+	}
+	.info_block_p,
+	.footer__about {
+	    font-size: 12px;
+	    line-height: 22px;
+	}
+	.section__number_of_section {
+	    font-size: 140px;
+	    line-height: 130px;
+	    top: 70px;
+	    left: 30px;
+	}
+	.info_block a span {
+	    font-size: 12px;
+	    padding-right: 10px;
+	}
+	.info_block a svg {
+		width: 16px;
+	}
+	.section_img {
+	    height: 600px;
+	    width: 280px;
+	}
+	.footer__about_company {
+	    width: 300px;
+	}
+	.footer__about {
+		margin: 25px 0 92px 0;
+	}
+	.footer__copyright {
+	    font-size: 9px;
+	}
+	.footer__navigatino nav ul li a {
+		font-size: 12px;
+	}
+	.footer__navigatino nav ul {
+	    grid-gap: 15px;
+	    grid-column-gap: 35px;
+	}
+	section {
+	    margin-bottom: 120px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.wrapper {
+		width: 75%;
+	}
+	.section__wrapper {
+		flex-direction: column;
+	}
+	.section_img {
+	    height: 350px;
+	    width: 80%;
+	}
+	.text_section {
+	    height: 420px;
+	}
+	.left_side {
+		order: 2;
+	}
+	.right_side {
+		margin: 0;
+	}
+	footer {
+		flex-direction: column;
+	}
+	.footer__about_company {
+		order: 1;
+		margin-top: 70px;
+	}
+	header nav ul li a,
+	.header__auth a span,
+	.main__social_media
+	.follow,
+	.main__vertical_navigation nav ul li a,
+	.main__under_title,
+	.main__scroll_down span,
+	.footer__navigation_title {
+		font-size: 10px;
+	}
+	svg {
+		width: 16px;
+		height: 14px;
+	}
+	h1 {
+    font-size: 26px;
+    margin: 15px 0;
+	}
+	.info_block h2 {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.info_block_p,
+	.footer__about {
+	    font-size: 8px;
+	    line-height: 14px;
+	}
+	.info_block a span {
+	    font-size: 11px;
+	    padding-right: 6px;
+	}
+	.logo {
+	    font-size: 24px;
+	    line-height: 20px;
+	}
+	.burger {
+		width: 25px;
+	    height: 15px;
+		position: relative;
+		display: block;
+	}
+	.burger_line {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #FFFFFF;
+		position: absolute;
+		left: 0;
+		transition: all 0.3s linear;
+	}
+	.bgl_1 {
+		top: 0;
+	}
+	.bgl_2,
+	.bgl_3 {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.bgl_4 {
+		bottom: 0;
+	}
+	.burger_active .bgl_1,
+	.burger_active .bgl_4 {
+		opacity: 0;
+	}
+	.burger_active .bgl_2 {
+		transform: translateY(-50%) rotate(45deg);
+	}
+	.burger_active .bgl_3 {
+		transform: translateY(-50%) rotate(-45deg);
+	}
+	header nav {
+		position: absolute;
+	    right: 80px;
+	    top: 100px;
+	    width: 25%;
+	    padding: 10px 20px;
+	    opacity: 0;
+	    transition: opacity 0.5s ease;
+	}
+	header nav ul {
+		flex-direction: column;
+	}
+	.navigation_active {
+		transition: opacity 0.5s ease;
+		opacity: 2;
+	}
+	.footer__about_company {
+	    width: 200px;
+	}
+	.main__wrap_title_info {
+	    height: 350px;
+	}
+	header {
+		padding: 30px 40px 0;
+	}
+}
+@media screen and (max-width: 425px) {
+	h1 {
+	    font-size: 20px;
+	    margin: 10px 0;
+	}
+	header nav ul li a,
+	.header__auth a span,
+	.main__social_media .follow,
+	.main__vertical_navigation nav ul li a,
+	.main__under_title,
+	.main__scroll_down span,
+	.footer__navigation_title {
+	    font-size: 7px;
+	}
+	svg {
+		width: 12px;
+		height: 10px;
+	}
+	.burger {
+	    width: 20px;
+	    height: 10px;
+	}
+	.section__number_of_section {
+	    font-size: 100px;
+	    line-height: 125px;
+	    top: 70px;
+	    left: 5px;
+	}
+	.info_block {
+	    margin: 130px 0 0 0;
+	}
+	.info_block a span {
+	    font-size: 8px;
+	    padding-right: 8px;
+	}
+	.info_block a svg {
+		width: 8px;
+	}
+	.wrapper {
+	    width: 70%;
+	}
+	.section_img {
+	    height: 250px;
+	    width: 75%;
+	}
+	.text_section {
+	    height: 440px;
+	}
+	#first_section::before {
+	    top: -40px;
+	}
+	.main__under_title {
+	    line-height: 17px;
+	    letter-spacing: 4px;
+	}
+}
+@media screen and (max-width: 320px) {
+	h1 {
+	    font-size: 14px;
+	}
+	.wrapper {
+	    width: 60%;
+	}
 }
